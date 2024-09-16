@@ -5,7 +5,6 @@ import { getData } from "../utils";
 import Loading from "./LoadingSpinner";
 import LogoAndContent from "./LogoAndContent";
 
-
 const SearchForm = () => {
   const [username, setUsername] = useState("");
   const [data, setData] = useState(null);
@@ -53,7 +52,7 @@ const SearchForm = () => {
         </div>
       </form>
       {loading ? <Loading /> : <RepoList data={data} />}
-      {data === null && loading === false? <LogoAndContent /> : null}
+      {data === null && loading === false ? <LogoAndContent /> : null}
     </div>
   );
 };

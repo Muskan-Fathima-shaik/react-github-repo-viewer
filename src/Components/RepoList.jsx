@@ -22,7 +22,7 @@ const RepoList = ({ data }) => {
       </div>
     );
   }
-
+ console.log(data, "data")
   return (
     <div className="w-2/4">
       {data?.map((userInfo) => (
